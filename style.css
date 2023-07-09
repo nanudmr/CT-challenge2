@@ -1,0 +1,353 @@
+@font-face {
+    font-family: "Bebas";
+    src: url('./fonts/bebas-regular-webfont.woff');
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url('./fonts/MYRIADPRO-REGULAR.OTF');
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    src: url('./fonts/MYRIADPRO-BOLD.OTF');
+}
+
+
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: 300;
+    src: url('./fonts/Ubuntu-Light.ttf');
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url('./fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    src: url('./fonts/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url('./fonts/OpenSans-VariableFont_wdth.ttf');
+}
+
+html {
+    font-size: 10px;
+}
+
+:root {
+    --orange: #FF5400;
+    --page-width: 105rem;
+}
+
+/* HEADER HEADER HEADER HEADER HEADER  */
+header>* {
+    font-size: 1.97rem;
+    font-family: Bebas, Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--orange);
+}
+
+.header-container {
+    max-width: var(--page-width);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1.2rem 0;
+}
+
+.header-container>div {
+    display: flex;
+    gap: 2.4rem;
+}
+
+header a {
+    color: white;
+}
+
+header p {
+    color: #BE3600;
+}
+
+.login button {
+    color: white;
+}
+
+.login button:first-child {
+    color: #BE3600;
+}
+
+/* MENU MENU MENU MENU MENU MENU MENU MENU  */
+
+.menu-container {
+    background-color: #F9F9F9;
+    padding: 4.4rem 0;
+    font-family: Bebas, 'Times New Roman', Times, serif;
+}
+
+.menu-content {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-content a.logo {
+    font-size: 5.2rem;
+    color: #313131;
+    margin-left: -4px;
+}
+
+.menu-content a.logo span.logo {
+    color: var(--orange);
+}
+
+
+.menu-content menu {
+    font-size: 1.3rem;
+    font-family: Myriad Pro, 'Times New Roman', Times, serif;
+    margin-top: 0.8rem;
+    display: flex;
+}
+
+menu li {
+    padding: 0 1.25rem;
+    padding-bottom: 2rem;
+}
+
+menu li a {
+    padding-bottom: 0.8rem;
+}
+
+.menu-item li a:hover {
+    font-weight: bold;
+    border-bottom: 4px solid var(--orange);
+}
+
+.menu-item ul.child li a {
+    border-bottom: none;
+}
+
+/* MENU DROPDOWN MENU DROPDOWN MENU DROPDOWN  */
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li.second-level {
+    background-color: white;
+}
+
+ul.third-level {
+    background-color: white;
+}
+
+ul li {
+    display: block;
+    position: relative;
+}
+
+li ul {
+    display: none;
+}
+
+ul li a {
+    white-space: nowrap;
+    color: black;
+}
+
+ul li a.title:hover {
+    font-weight: bold;
+    border-bottom: 4px solid var(--orange);
+}
+
+ul li a:hover {
+    font-weight: bold;
+}
+
+li:hover>ul {
+    display: block;
+    position: absolute;
+    top: 28px;
+}
+
+li:hover>ul.third-level {
+    top: -10px;
+}
+
+
+li.second-level:hover a {
+    background: white;
+}
+
+ul.first-level,
+ul.third-level {
+    border: 1px solid black;
+    padding-top: 12px;
+}
+
+li:hover li a:hover {
+    background: #fff;
+}
+
+ul ul ul {
+    left: 100%;
+}
+
+/* POSITION POSITION POSITION POSITION  */
+
+.position-container {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 4.4rem 0;
+}
+
+.position-container a,
+span.position-decoration {
+    font-family: Ubuntu, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    color: #ADADAD;
+}
+
+.position-container a.current-position {
+    font-weight: bold;
+    color: #6A6A6A;
+}
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN  */
+
+main {
+    max-width: var(--page-width);
+    margin: 0 auto;
+}
+
+.main-container h1 {
+    font-family: OpenSans, 'Times New Roman', Times, serif;
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.main-container p {
+    font-family: Ubuntu, 'Times New Roman', Times, serif;
+    color: #ADADAD;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+/* CONTACT SECTION CONTACT SECTION CONTACT SECTION  */
+
+.contact-section {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    margin-top: 5.6rem;
+    display: flex;
+    gap: 7.7rem;
+}
+
+.contact-section>div {
+    width: 100%;
+}
+
+.contact-section>div h2 {
+    font-family: Opensans, 'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+    border-bottom: 0.6rem solid #525252;
+    padding-bottom: 1.2rem;
+    color: var(--orange);
+    margin-bottom: 1.8rem;
+}
+
+
+/* FORM SIDE FORM SIDE FORM SIDE FORM SIDE  */
+
+.contact-container-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-container-form form .form-mid {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-container-form form .form-mid div {
+    width: 100%;
+}
+
+.contact-container-form form input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Ubuntu, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    padding: 1rem;
+    background-color: #F6F6F6;
+    border: 1px solid #EDEDED;
+}
+
+.contact-container-form form textarea {
+    min-height: 10rem;
+}
+
+.contact-container-form form input.submit {
+    width: min-content;
+    padding: 1.2rem 2.4rem;
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
+    font-family: OpenSans,'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* REACH SIDE REACH SIDE REACH SIDE REACH SIDE  */
+
+.reach-container-info {
+    margin-bottom: 6rem;
+}
+
+.reach-container-info div p {
+    font-family: Myriad Pro, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+}
+
+.reach-container-info .name p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.reach-container-info .location {
+    margin-bottom: 2rem;
+}
+
+/* SOCIAL LINKS SOCIAL LINKS SOCIAL LINKS  */
+
+.reach-container .social-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.reach-container .social-links a {
+    background-color: #D9D9D9;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reach-container .social-links a:first-child {
+    background-color: #313131;
+}
